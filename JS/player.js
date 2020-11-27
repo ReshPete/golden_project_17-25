@@ -43,7 +43,7 @@ class Player {
         }   else{
     
             this.sprite.changeAnimation("IdleLeft");
-    
+
         }
     } 
         
@@ -74,7 +74,7 @@ class Player {
 
             this.status ="normal";
 
-        },250);
+        },500);
 
     }
 

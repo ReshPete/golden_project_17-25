@@ -9,6 +9,8 @@ class Pirates {
         this.sprite.scale = 0.7;
 
         this.sprite.debug = true;
+
+        this.sprite.setCollider("rectangle",0,-38,500,300)
     }
 
     display(){
