@@ -11,7 +11,7 @@ var jumprightPC,attackleftPC;
 
         runningPC = loadAnimation("./Animations/Running_Animations/Run1.png","./Animations/Running_Animations/Run2.png",
         "./Animations/Running_Animations/Run3.png","./Animations/Running_Animations/Run4.png","./Animations/Running_Animations/Run5.png",
-        "./Animations/Running_Animations/Run6.png")
+        "./Animations/Running_Animations/Run6.png");
 
         runBackPC = loadAnimation("./Animations/Run_back/Rb1.png","./Animations/Run_back/Rb2.png","./Animations/Run_back/Rb3.png",
         "./Animations/Run_back/Rb4.png","./Animations/Run_back/Rb5.png","./Animations/Run_back/Rb6.png");
@@ -28,7 +28,7 @@ var jumprightPC,attackleftPC;
         attackrightPC = loadAnimation("./Animations/Attackright/sprite_1.png","./Animations/Attackright/sprite_2.png",
         "./Animations/Attackright/sprite_3.png","./Animations/Attackright/sprite_4.png");
 
-        attackrightPC.frameDelay = 1;
+     
 
         attackleftPC = loadAnimation("./Animations/Attackleft/sprite_1.png","./Animations/Attackleft/sprite_2.png",
         "./Animations/Attackleft/sprite_3.png","./Animations/Attackleft/sprite_4.png");

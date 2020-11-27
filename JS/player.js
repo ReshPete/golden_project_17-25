@@ -4,7 +4,7 @@ class Player {
 
         this.sprite = createSprite(x,y,50,50);
         this.direction = "right"
-       
+        this.status = "normal";
         this.sprite.addAnimation("Idle",idlePC);
         this.sprite.addAnimation("Run",runningPC);
         this.sprite.addAnimation("Runback",runBackPC);
@@ -33,9 +33,9 @@ class Player {
         this.sprite.changeAnimation("Run");
         this.direction = "right";
      
-    }   else{
+    }   else if (this.status == "normal"){
     
-        if(player.direction == "right"){
+        if(this.direction == "right"){
            this.sprite.changeAnimation("Idle");
         }   else{
     
@@ -55,15 +55,26 @@ class Player {
 
         }
 
-      }
+    }
 
-      if(keyDown("space")){
+    if(keyDown("space")){
 
+        this.status = "attack";
+       if(this.direction == "right"){
         this.sprite.changeAnimation("Attackright");
+       }else{
 
-      }
+        this.sprite.changeAnimation("Attackleft");
+
+       }
+        setTimeout(()=>{
+
+            this.status ="normal";
+
+        },250);
 
     }
 
+    }
 
 }
