@@ -14,6 +14,9 @@ class Player {
         this.sprite.addAnimation("Attackleft",attackleftPC); 
 
         this.sprite.scale = 1.2;
+
+        this.sprite.debug = true;
+
     }
 
     display(){

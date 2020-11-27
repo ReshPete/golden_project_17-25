@@ -6,7 +6,9 @@ class Pirates {
         this.sprite.shapeColor = "red";
         this.sprite.addAnimation("Npcleft",idleNPC);
         
-        this.sprite.scale = 0.7
+        this.sprite.scale = 0.7;
+
+        this.sprite.debug = true;
     }
 
     display(){

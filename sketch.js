@@ -28,7 +28,7 @@ var jumprightPC,attackleftPC;
         attackrightPC = loadAnimation("./Animations/Attackright/sprite_1.png","./Animations/Attackright/sprite_2.png",
         "./Animations/Attackright/sprite_3.png","./Animations/Attackright/sprite_4.png");
 
-     
+     attackrightPC.frameDelay = 2.5
 
         attackleftPC = loadAnimation("./Animations/Attackleft/sprite_1.png","./Animations/Attackleft/sprite_2.png",
         "./Animations/Attackleft/sprite_3.png","./Animations/Attackleft/sprite_4.png");
